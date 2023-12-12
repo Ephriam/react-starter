@@ -1,0 +1,50 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  transition: width 0.3s ease; /* Add transition for width */
+}
+
+.sidebar.open {
+  width: 0; /* Set width to 0 when closed */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Add any additional styling as needed */

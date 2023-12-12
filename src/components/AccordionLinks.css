@@ -1,0 +1,59 @@
+/* AccordionLinks.css */
+
+.accordion-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .accordion-item {
+    margin-bottom: 5px;
+  }
+  
+  .accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(90deg);
+  }
+  
+  .sub-links {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0;
+    overflow: hidden; /* Hide the overflow to create the sliding effect */
+    max-height: 0; /* Initially set the max-height to 0 */
+    transition: max-height 0.3s ease; /* Apply transition to create the sliding effect */
+  }
+  
+  .sub-links li {
+    margin-bottom: 5px;
+  }
+  
+  .sub-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    display: block;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sub-links a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style for the sliding animation */
+  .accordion-item.open .sub-links {
+    max-height: 1000px; /* Adjust the max-height to a sufficiently large value */
+  }
+  
